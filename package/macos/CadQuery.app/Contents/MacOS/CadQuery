@@ -2,7 +2,5 @@
 # Entrypoint script for macOS app bundle
 
 app_dir="$(dirname "$(dirname "$0")")"
-res_dir="$app_dir/Resources"
-cd "$res_dir"
-bin/python run.py
+"$app_dir/Resources/bin/python" run.py
 
